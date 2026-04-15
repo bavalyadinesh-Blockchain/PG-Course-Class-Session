@@ -1,0 +1,88 @@
+ Bitcoin Mining
+
+What is Bitcoin Mining?
+Bitcoin mining is the process of creating new bitcoin by solving complex mathematical puzzles.
+Mining helps to:
+•	Verify the legitimacy of transactions
+•	Include the verified transactions into a block
+•	Reach consensus among all active nodes (so everyone agrees on one correct chain)
+•	A new block is added to the blockchain.once theconsensus is achieved.
+Because bitcoin has limited supply, mining creates scarcity → demand ↑ → price ↑
+(Example: Gold, Crypto)
+Block reward might reduce over time due to Bitcoin Halving.
+________________________________________
+Step 1: Transaction Verification and Inclusion
+•	Each node that receives a transaction copy verifies the transaction.
+•	All validated transactions are stored in a mempool.
+•	Miners then bundle these transactions into a candidate block.
+Example:
+A → B → C
+A sends 2 BTC to C, etc.
+________________________________________
+Step 2: Proof of Work (PoW)
+1.	Miners start looking for a nonce value to generate a block hash that requires ceryain leading zeros.
+2.	Miner constructs the block → Block header includes:
+o	Version
+o	Merkle root
+o	Previous block hash
+o	Difficulty target
+o	Nonce
+o	Timestamp
+________________________________________
+Step 3: Creation of New Block
+•	Once a miner creates a valid block, it is added to the blockchain network.
+•	Existing chain + New block = Extended chain
+________________________________________
+Orphan Block
+When two valid blocks are mined at the same time and broadcasted:
+•	Only one block gets accepted to the main blockchain.
+•	The rejected one becomes an Orphan Block.
+•	Miners do not get rewards for orphan blocks.
+________________________________________
+Bitcoin Core
+1.	What is Bitcoin Core?
+o	Bitcoin Core is a node (software/server).
+2.	Download source:
+o	Website: bitcoin.org
+o	Download Bitcoin Core
+3.	Documentation:
+o	http://developer.bitcoin.org/en/doc/code/
+4.	Choose OS → Windows
+5.	Install → Ensure “bitcoin-core”
+6.	Zip file → Extract (default directory)
+7.	New file → Open with cmd / notepad
+________________________________________
+Private Local Blockchain / Testnet
+•	Testnet = Local Bitcoin blockchain
+•	No real money involved
+•	Instant block mining
+•	Best for classroom practice
+Running Bitcoin Daemon (bitcoind) runs blockchain node in the background.
+Node = System + Blockchain server
+________________________________________
+Differences between Bitcoin &Ethereum
+Bitcoin	Ethereum
+Bitcoin Core (software/server)	Geth (server)
+bitcoin.org	geth.ethereum.org / remix.ethereum.org
+Testnet (public blockchain)	Sepolia etc.(public blockchain)
+Regtest (private localblockchain)	Hardhat / Ganache (private local blockchain)
+Bitcoin CLI (commands)	geth / Hardhat console (code)
+Bitcoin TestnetFocus: Transactions, UTXO model, blocks	EthereumFocus: Smart contracts, gas, accounts
+Teaches how blockchain works	Teaches how to build on blockchain
+Bitcoind: local storage and also a software.	
+________________________________________
+PoW vs PoS
+PoW (Proof of Work)
+1.	Verification done by miners
+2.	Drawbacks:
+o	High investment
+o	Electricity consumption
+o	Needs to run 24/7
+3.	Miners receive block rewards
+PoS (Proof of Stake)
+1.	Validation done by validators (people who stake coins)
+2.	Validators hold money as stake
+3.	Block rewards are given automatically
+4.	Even if system is off (through masternodes), rewards continue
+
+Reference links1:https://bitcoin.org/en/
